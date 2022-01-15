@@ -1,8 +1,15 @@
-h1{
+*{
     text-align: center;
-    color:#8DAFCE;
 }
 
 body {
-    background-color: #343A40;
+    background-color: black;
+}
+
+.maincolor{
+    color:#8DAFCE;
+}
+
+.secondarycolor{
+    color:white;
 }
