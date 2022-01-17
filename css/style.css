@@ -1,0 +1,25 @@
+*{
+    text-align: center;
+}
+
+body {
+    background-color: #121212;
+}
+
+.maintext{
+    font-family: 'Dongle', sans-serif;
+    font-weight: 700;
+    color:#70a6da;
+}
+
+.secondarytext{
+    font-family: 'Dongle', sans-serif;
+    font-weight: 500;
+    color:#F0FAFF;
+}
+
+.thirdtext{
+    font-family: 'Dongle', sans-serif;
+    font-weight: 300;
+    color:white;
+}
