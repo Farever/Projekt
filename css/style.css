@@ -6,6 +6,19 @@ body {
     background-color: #121212;
 }
 
+ul {
+    display: table;
+    margin: 0 auto;
+  }
+
+img{
+    width:50%;
+    max-width: 500px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+
 .maintext{
     font-family: 'Dongle', sans-serif;
     font-weight: 700;
@@ -15,11 +28,19 @@ body {
 .secondarytext{
     font-family: 'Dongle', sans-serif;
     font-weight: 500;
-    color:#F0FAFF;
+    color:#d3ecf8;
 }
 
 .thirdtext{
     font-family: 'Dongle', sans-serif;
     font-weight: 300;
     color:white;
+}
+
+.background{
+    background-color: #121212;
+}
+
+.tartalom{
+    margin: 0 auto;
 }
