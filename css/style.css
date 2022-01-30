@@ -12,11 +12,8 @@ ul {
   }
 
 img{
-    width:50%;
+    width:100%;
     max-width: 500px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
 }
 
 .maintext{
@@ -43,4 +40,8 @@ img{
 
 .tartalom{
     margin: 0 auto;
+}
+
+table td{
+    border: 2px solid white;
 }
