@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+html { 
+    scroll-behavior: smooth; 
+} 
+
 body {
     background-color: #121212;
 }
@@ -40,14 +44,12 @@ img{
 .tartalom{
     margin: 0 auto;
 }
-
 table{
-    border-collapse: collapse;
     width: 100%;
 }
 
 td{
     border: 2px solid white;
-    border-collapse: collapse;
     width: 50%;
+    border-collapse: collapse;
 }
