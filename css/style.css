@@ -1,7 +1,6 @@
 *{
     text-align: center;
 }
-
 html { 
     scroll-behavior: smooth; 
 } 
@@ -9,11 +8,6 @@ html {
 body {
     background-color: #121212;
 }
-
-ul {
-    display: table;
-    margin: 0 auto;
-  }
 
 img{
     width:100%;
@@ -41,9 +35,6 @@ img{
     background-color: #121212;
 }
 
-.tartalom{
-    margin: 0 auto;
-}
 table{
     width: 100%;
 }
