@@ -10,68 +10,37 @@
     <title>Mr.Robot</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
+  <nav class="navbar navbar-dark navbar-expand-lg shadow-5-strong">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav" style="margin: 0 auto;">
         <li class="nav-item">
-          <a class="nav-link" href="index.html">Kezdőoldal</a>
+          <a class="nav-link" href="index.html">Kezdőoldal <span class="sr-only"></span></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            fsociety
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="Elliot.html">Elliot Alderson</a>
-            <a class="dropdown-item" href="fsociety.html">fsociety</a>
-          </div>
+        <li class="nav-item">
+          <a class="nav-link" href="fsociety.html">fsociety <span class="sr-only"></span></a>
         </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              E-corp<span class="sr-only">(current)</span>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Tyrell_Wellick.html">Tyrell Wellick</a>
-                <a class="dropdown-item" href="e-corp.html">E-Corp</a>
-            </div>
-          </li>
-        
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dark Army
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Whiterose.html">Whiterose</a>
-                <a class="dropdown-item" href="dark-army.html">Dark Army</a>
-            </div>
-          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="e-corp.html">E-Corp <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="dark-army.html">Dark Army <span class="sr-only"></span></a>
+        </li>
 
       </ul>
     </div>
   </nav>
 
     <div class="container">
-      <div class="row">
-        <div class="col-xs-12">
+      <div class="row justify-content-end">
+        <div class="col-12 order-xs-first">
         <h1 class="text-center maintext">E Corp</h1>					
         <h2 class="text-center secondarytext"><em>"Together we can change the world, with E Corp"</em></h2><br>                                                                  
         </div>
         
-        <div class="col-sm-8 thirdtext">
-          <blockquote>
-          <p>Az E Corp teljes neve Evil Corp (azaz Gonosz Cég), egyike a legnagyobb multi cégeknek a világon. Leányvállalataival gyártanak számítógépeket, telefonokat, tableteket, és nyújtanak pénzügyi szolgáltatásokat. Mr.Robot szerint a cég uralja a világ pénzügyeinek 70%-át, ezért vette célba őket az fscociety.</p>
-          </blockquote>
-          <blockquote>
-          <p>Az <a href="/fsociety.html">fsociety</a> felelős ahhoz a DDoS támadáshoz, ami miatt elítélték Terry Colbyt, az E Corp előző CTO-ját. <a href="Tyrell_Wellick.html">Tyrell Wellick</a> ezután azt hitte övé lesz ez a poszt, de helyette Scott Knowles kapta meg ezt a megtisztelést.
-          </p>
-          </blockquote>
-          <h3>Több infóért kattins ide: <a href="https://mrrobot.fandom.com/wiki/E_Corp">Fandom</a></h3>
-        </div> 
-
-        <div class="col-sm-4 text-center thirdtext">
+        <div class="col-md-4 order-second order-md-last text-center thirdtext">
           <table >
               <tr>
                   <td>
@@ -83,7 +52,7 @@
                       <table class="text-center">
                           <tr>
                             <td>Típus: </td>
-                            <td>Konglomerátum</td>
+                            <td><a href="https://hu.wikipedia.org/wiki/Konglomer%C3%A1tum_(v%C3%A1llalatcsoport)" target="_blank">Konglomerátum</a></td>
                           </tr>
                           <tr>
                             <td><strong>CEO:</strong></td>
@@ -102,7 +71,54 @@
               </tr>
           </table>
         </div>
-      </div>
+
+        <div class="col-md-8 thirdtext">
+          <blockquote>
+          <p class="text-left">Az E Corp teljes neve Evil Corp (azaz Gonosz Cég), egyike a legnagyobb multi cégeknek a világon. Leányvállalataival gyártanak számítógépeket, telefonokat, tableteket, és nyújtanak pénzügyi szolgáltatásokat. Mr.Robot szerint a cég uralja a világ pénzügyeinek 70%-át, ezért vette célba őket az fscociety.</p>
+          <p class="text-left">Az <a href="fsociety.html">fsociety</a> felelős ahhoz a DDoS támadáshoz, ami miatt elítélték Terry Colbyt, az E Corp előző CTO-ját. Tyrell Wellick ezután azt hitte övé lesz ez a poszt, de helyette Scott Knowles kapta meg ezt a megtisztelést.
+          </p>
+          </blockquote>
+
+          <br>
+          <h2 class="text-left maintext">Mérgező gáz szivárgás</h2>
+          <blockquote>
+          <p class="text-left">1993 ban egy mérgező gáz szivárgás történt az E Corp több gyárában is. A következő 24 hónapban 26 alkalmazott halt meg hasonló típusú leukémiában. Az E Corp ellen indított bírósági eljárás elútasításra került, mivel, hogy nincs konkrét bizonyíték arra, hogy a megbetegedések visszavezethetőek lennének az E Corp gyáraira. </p>
+          </p>
+          </blockquote>
+
+          <br>
+          <h2 class="text-left maintext">Fsociety Támadások</h2>
+          <blockquote>
+          <p class="text-left">2015 májusában az fsociety megtámadta az E Corp adat tároló központját. Az E Corp az összes adatát egy Steel Mountain nevű helyen tárolta. Több DDoS támadás után az összes digitális adatot egy elvileg feltörhetetlen kulcs védte. A Steel Mountain elleni támadás eltörölné az emberek hiteleit, mivel erről az E Corpnak se fizikai se digitális mentése nem lesz. Ebben az időben a "Bank of E" az E Corp pénzintézete volt a világ legnagyobb bankja. A támadások ellenére Phillip Price magabiztos volt, hogy tudják kik állnak a támadások mögött és a vállalat emiatt nem fog összeomlani. </p>
+          </blockquote>
+
+          <br>
+          <h2 class="text-left maintext">Szeptember 29.ei támadások</h2>
+          <blockquote>
+          <p class="text-left">2015 Szeptember 29.én tüntetők megtámadták az E Corp központját, sok emeletet megrongálva és sok embert megölve. Ám Phillip Price ot nem zavarta a tüntetés. Pár órával a tüntetés után 71 E Corp létesítmény robbant fel vagy kapott lángra a Dark Armynak köszönhetően. Eközben Tyrell Wellicket letartoztatta az FBI.Ez a támadás közel 3000 ember halálát okozta. Az elkövetők végeztek sajátmagukkal mielőtt azFBI elkapta volna őket. </p>
+          </blockquote>
+
+          <br>
+          <h2 class="text-left maintext">Az E Corp Leányvállalatai</h2>
+          <ul style="text-align: left;">
+            <li>Bank of E Network</li>
+            <li>E coin</li>
+            <li>E Corp Power</li>
+            <li>E-Mart</li>
+            <li>Sound & Fury Entertainment</li>
+            <li>Tremont Productions Inc.</li>
+            <li>E Corp Labs</li>
+            <li>E Phone</li>
+            <li>E Realty</li>
+            <li>E Shipping</li>
+            <li>E Corp Home Entertainment</li>
+          </ul>
+
+          <br><h3 class="text-center">Több infóért kattins ide: <a href="https://mrrobot.fandom.com/wiki/E_Corp">Fandom</a></h3>
+        </div> 
+
+
+    </div>
     </div>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
