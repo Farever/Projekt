@@ -11,13 +11,21 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Mr.Robot</title>
     <script language="javascript">
-        var answer = window.confirm("Az oldal spoilereket tartalmaz.");
-        if (answer == true) {
-        }
-        else {
-          alert('Nézd meg a sorozatot!')
-        document.location="http://www.hbogo.hu/";
-        }
+          let isAccepted = sessionStorage.getItem('accepted');
+          if(isAccepted != false && isAccepted != true){
+            isAccepted = false
+          }
+          if(isAccepted == false){
+            var answer = window.confirm("Az oldal spoilereket tartalmaz.");
+            if (answer == true) {
+              sessionStorage.setItem('accepted', 'true');
+            }
+            else {
+              sessionStorage.setItem('accepted', 'false');
+              alert('Nézd meg a sorozatot!')
+            document.location="http://www.hbogo.hu/";
+            }
+          }
         </script>
     
     
