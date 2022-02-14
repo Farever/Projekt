@@ -9,24 +9,8 @@
     <link rel="icon" type="image/x-icon" href="kepek/icon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/accept.js"></script>
     <title>Mr.Robot</title>
-    <script language="javascript">
-          let isAccepted = sessionStorage.getItem('accepted');
-          if(isAccepted != false && isAccepted != true){
-            isAccepted = false
-          }
-          if(isAccepted == false){
-            var answer = window.confirm("Az oldal spoilereket tartalmaz.");
-            if (answer == true) {
-              sessionStorage.setItem('accepted', 'true');
-            }
-            else {
-              sessionStorage.setItem('accepted', 'false');
-              alert('Nézd meg a sorozatot!')
-            document.location="http://www.hbogo.hu/";
-            }
-          }
-        </script>
     
     
 </head>
