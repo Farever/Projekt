@@ -1,14 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
-  <?php 
-    session_start();
-    
-  if(isset($_GET[session_id()])) {
-    
-    $_SESSION['elmult'] = true;
-      
-  }
-  ?>
+  
     
 <head>
     <meta charset="UTF-8">
@@ -18,24 +10,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Mr.Robot</title>
+    <script language="javascript">
+        var answer = window.confirm("Az oldal spoilereket tartalmaz.");
+        if (answer == true) {
+        }
+        else {
+          alert('Nézd meg a sorozatot!')
+        document.location="http://www.hbogo.hu/";
+        }
+        </script>
+    
     
 </head>
 <body>
-    
-    <?php
-    if(empty($_SESSION['elmult'])) {
-    ?>
-            <div style="width:100%; height:100%; background-color:#333333; opacity:0.9; position:fixed; margin:0; padding:0; z-index:1001;">
-                <div style="text-align:center; color:#FFFFFF;">Elmúltál?
-                    <p>
-                        <a href="?<?php echo session_id(); ?>">Igen</a>
-                        <a href="http://www.lego.com">Nem</a>
-                    </p>
-                </div>
-            </div>
-    <?php
-    }
-    ?>
     
     <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
