@@ -8,7 +8,7 @@ if(isset($_GET[session_id()])) {
 	
 }
 ?>
-...
+
 <body>
 
 <?php
