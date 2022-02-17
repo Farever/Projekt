@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/accept.js"></script>
+    <script src="js/login.js"></script>      
     <title>Mr.Robot</title>
     
     
@@ -34,10 +35,34 @@
             <li class="nav-item">
               <a class="nav-link" href="dark-army.html">Dark Army <span class="sr-only"></span></a>
             </li>
-          </ul>
+            <!--Login-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="emailForm">Email cím</label>
+                    <input type="email" class="form-control" id="emailForm" placeholder="email@pelda.com">
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordForm">Jelszó</label>
+                    <input type="password" class="form-control" id="passwordForm" placeholder="Jelszó">
+                  </div>
+                  <button onclick="logIn()" type="submit" class="btn btn-primary" id="loginBtn">Sign in</button>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Regisztráció</a>
+                  <a class="dropdown-item" href="#">Elfelejtetten a jelszavam</a>
+                </form>
+              </div>
+            </li>
+            <!--/Login-->
+          </ul> 
         </div>
     </nav>
-      <main role="main"> 
+
+      <main> 
           <div class="container">
             <h1 class="display-3 maintext text-center">Kezdőlap</h1>
             <p class="secondarytext text-center">Nem hivatalos Mr. Robot rajongói oldal</p>
@@ -52,13 +77,13 @@
           </ol>
           <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
-              <img class="d-block w-100" src="kepek/slider1.jpg"> <!--Felbotntás 1920x600!-->
+              <img class="d-block w-100" src="kepek/slider1.jpg" alt=""> <!--Felbotntás 1920x600!-->
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="kepek/slider2.jpg"> <!--Jó-->
+              <img class="d-block w-100" src="kepek/slider2.jpg" alt=""> <!--Jó-->
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="kepek/slider3.jpg"> <!--Jó-->
+              <img class="d-block w-100" src="kepek/slider3.jpg" alt=""> <!--Jó-->
             </div>
           </div>
         </div>
