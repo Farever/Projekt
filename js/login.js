@@ -4,15 +4,15 @@ if(sessionStorage.getItem('loggedIn') == undefined)
 }
 
 function logIn() {
-    var email = document.getElementById("emailForm");
-    var emailValue = email.value;
+    var name = document.getElementById("usernameForm");
+    var nameValue = name.value;
     var password = document.getElementById("passwordForm");
     var passwordValue = password.value;
-    if(emailValue == "admin@gmail.com" && passwordValue == "admin")
+    if(nameValue == "admin" && passwordValue == "admin")
     {
         console.log("Sikeres bejelentkezés")
-        sessionStorage.setItem('loggedIn', '1');
-        location.reload();
-        document.getElementsById("navbarDropdown").classList.add('disabled');
+        sessionStorage.setItem('loggedIn', '1')
+        var loginText = document.getElementById("navbarDropdown")
+        loginText.classList.add("disabled");
     }
 }
