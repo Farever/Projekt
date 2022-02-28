@@ -17,7 +17,7 @@ function accepted()
           sessionStorage.setItem('isAccepted', '0');
           console.log(sessionStorage.getItem('isAccepted'))
           alert('Nézd meg a sorozatot!');
-        document.location="http://www.hbogo.hu/";
+          document.location="http://www.hbogo.hu/";
         }
 }
 

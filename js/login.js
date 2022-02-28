@@ -10,9 +10,17 @@ function logIn() {
     var passwordValue = password.value;
     if(nameValue == "admin" && passwordValue == "admin")
     {
-        console.log("Sikeres bejelentkezés")
+        alert("Sikeres bejelentkezés")
         sessionStorage.setItem('loggedIn', '1')
-        var loginText = document.getElementById("navbarDropdown")
-        loginText.classList.add("disabled");
+    } else{
+        var username = localStorage.getItem('username')
+        var userpassword = localStorage.getItem('password') 
+        if(nameValue == username && passwordValue == userpassword)
+        {
+            alert("Sikeres bejelentkezés")
+            sessionStorage.setItem('loggedIn', '1')
+        } else{
+            alert('Sikertelen bejelentkezés.')
+        }
     }
 }
