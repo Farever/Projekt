@@ -1,5 +1,5 @@
 if(localStorage.getItem('registered') == 1){
-    window.location.href = '../PROJEKT/index.html';
+    window.location.href = './index.html';
 }
 
 function register(){
@@ -9,11 +9,5 @@ function register(){
     localStorage.setItem('username', name.value)
     localStorage.setItem('password', password.value)
     localStorage.setItem('registered', 1) 
-    window.location.href = '../PROJEKT/index.html';
-}
-
-function deleteregiser(){
-    localStorage.setItem('username', null)
-    localStorage.setItem('password', null)
-    localStorage.setItem('registered', 0) 
+    window.location.href = './index.html';
 }

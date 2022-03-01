@@ -21,6 +21,7 @@ function logIn() {
             sessionStorage.setItem('loggedIn', '1')
         } else{
             alert('Sikertelen bejelentkezés.')
+            sessionStorage.setItem('loggedIn', '0')
         }
     }
 }
